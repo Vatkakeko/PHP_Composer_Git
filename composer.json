@@ -1,0 +1,11 @@
+{
+  "name": "red/composer_php",
+  "authors": [
+    {
+      "name": "vattana"
+    }
+  ],
+  "require": {
+    "envms/fluentpdo": "^2.2"
+  }
+}
