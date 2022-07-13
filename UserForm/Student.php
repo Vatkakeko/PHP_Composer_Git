@@ -33,6 +33,7 @@ class Student
     {
         global $pdo;
 
+
         $sql = 'INSERT INTO user(name, email, gender, class, password) VALUES (:name, :email, :gender, :class, :password)';
 
         $stminsert = $pdo->prepare("INSERT INTO user(name) VALUES (:name)");
@@ -52,6 +53,7 @@ class Student
         );
         $stminsert = $pdo->prepare($sql);
         $stminsert->execute($values);
+
 
         return $pdo->lastInsertId();
     }

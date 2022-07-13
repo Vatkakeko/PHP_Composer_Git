@@ -4,12 +4,6 @@ include 'Student.php';
 
 $student = new Student();
 
-
-if (!isset($_SESSION['user'])) {
-    header("location: index.php");
-    exit();
-}
-
 if (isset($_POST['signupSubmit'])) {
     $name = $_POST["signupusername"];
     $email = $_POST["signupemail"];
@@ -49,8 +43,9 @@ if (isset($_POST['signupSubmit'])) {
 
 <body>
 
-    Welcome <?php echo $name; ?><br>
-    Your GENDER IS: <?php echo $gender; ?>
+
+
+    <h3 class="text-center ">Welcome <?php echo $name; ?><br></h3>
 
     <table class="table">
         <thead>
